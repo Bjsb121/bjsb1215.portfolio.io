@@ -1,0 +1,122 @@
+html {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+  background-repeat: no-repeat;
+  font-family: 'Mukta', sans-serif;
+  max-height: fit-content;
+  font-size: 18px;
+}
+
+#header {
+  color: rgb(186, 185, 185);
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: -3rem;
+}
+
+#header .timeRef {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: -1rem;
+  transition: opacity 200ms;
+}
+
+#time-ref:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#time-ref:visited,
+#time-ref:link { 
+  text-decoration: none; 
+  color:rgb(186, 185, 185);
+ }
+
+img {
+  width: 20rem;
+  height: auto;
+}
+
+#main-page {
+  display: flex;
+  max-width: 100%;
+  height: 85rem;
+  align-items: center;
+  justify-items: stretch;
+}
+
+.left-side {
+  display: flex;
+}
+
+.name-title {
+  padding: 50px;
+  text-align: center;
+  color: rgb(167, 167, 167);
+}
+
+.description1 {
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1.2rem;
+}
+
+.project1-title,
+.project2-title,
+.project3-title {
+  max-width: 60%;
+  padding-left: 20%;
+  justify-self: center;
+}
+
+.project1-title,
+.project1-image {
+  text-align: center;
+}
+
+.project3-title,
+.project3-image {
+  text-align: center;
+}
+
+.right-side {
+  display: flex;
+}
+
+.pic-of-me {
+  text-align: center;
+}
+
+.description2 {
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1.2rem;
+}
+
+.project2-title,
+.project2-image {
+  text-align: center;
+}
+
+.contact-me {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1275px) and (min-width: 400px) {
+  #main-page {
+    flex-direction: column;
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-wrap: nowrap;
+  }
+  .pic-of-me {
+    margin-top: 2rem;
+  }
+  .timeRef {
+    position:relative;
+  }
+}
